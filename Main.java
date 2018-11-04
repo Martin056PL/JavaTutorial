@@ -4,15 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int passengers;
-        passengers = 0;
+        int stops;
+        int fare;
+        stops = 0;
+        fare=0;
+        
 
-        System.out.println("Hello World!");
-
-        passengers=passengers+5;
-        passengers=passengers-3;
-        passengers=passengers+-1+5;
-        System.out.println(passengers);
+        stops=stops+1;
+        fare=fare+5;
+        stops=stops+1;
+        fare=fare+3;
+        stops=stops+1;
+        fare=fare+7;
+        System.out.println(stops);
 
     }
 }
