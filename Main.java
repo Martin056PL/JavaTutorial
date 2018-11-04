@@ -4,19 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int stops;
-        int fare;
-        stops = 0;
-        fare=0;
-        
+        String driver= "Hamish";
+        int letters = driver.length();
 
-        stops=stops+1;
-        fare=fare+5;
-        stops=stops+1;
-        fare=fare+3;
-        stops=stops+1;
-        fare=fare+7;
-        System.out.println(stops);
+        driver = driver.toUpperCase();
+
+        System.out.println(letters);
+        System.out.println(driver);
+
+        String driverFirstName = "Kamil";
+        String driverLastName = "Kowalski";
+        String driverFullName = driverFirstName + " " + driverLastName;
+        System.out.println(driverFullName);
+
+        int stops = 3;
+        int fare = 15;
+
+        System.out.println("The bus made $" + fare+ " after " + stops + " stops");
 
     }
 }
