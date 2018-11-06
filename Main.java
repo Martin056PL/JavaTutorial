@@ -4,24 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-    printPhoto(130, 120, false);
+    returnLikes(1,"nice",true);
 
     }
 
-    public static void printPhoto(int width, int height, boolean isColor){
-        System.out.println("Width: " + width +"cm");
-        System.out.println("Height: " + height +"cm");
-        if(isColor){
-            System.out.println("Photo is in color");
-        }else {
-            System.out.println("Photo isn't in color");
+    public static int returnLikes(int currentLikes, String Comment, boolean like) {
+        System.out.println("Feedback: " + Comment);
+        if (like) {
+            currentLikes = currentLikes + 1;
         }
+        System.out.println("Number of likes: " + currentLikes);
+        return currentLikes;
     }
-// Define a function playMusic() below.
-// This should print out: "Music is playing" when playButton is true
-// and "Music is paused" when playButton is false.
-
-
-
 }
+
+
+
+
+
+
 
