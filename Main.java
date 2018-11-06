@@ -2,14 +2,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        boolean isStudent = true;
-        int ticketPrice = 10;
-        int age = 30;
+    playMusic();
 
-        if((age<=15||age>60)||isStudent){
-            System.out.println("Discount! 5$ for ticket");
+    }
+
+    boolean playButton = true; // true or false
+
+    public void playMusic(){
+        if(playButton){
+            System.out.println("Music is playing");
         }else{
-            System.out.println("Normal ticket");
+            System.out.println("Music is paused");
         }
     }
+// Define a function playMusic() below.
+// This should print out: "Music is playing" when playButton is true
+// and "Music is paused" when playButton is false.
+
+
+
+}
 }
