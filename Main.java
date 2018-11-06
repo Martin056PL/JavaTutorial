@@ -1,18 +1,20 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        rollercoster(120);
+    printPhoto(130, 120, false);
 
     }
 
-    boolean playButton = true; // true or false
-
-    public static void rollercoster(double height){
-        if(height>=130){
-            System.out.println("You can use it!");
+    public static void printPhoto(int width, int height, boolean isColor){
+        System.out.println("Width: " + width +"cm");
+        System.out.println("Height: " + height +"cm");
+        if(isColor){
+            System.out.println("Photo is in color");
         }else {
-            System.out.println("don't use it");
+            System.out.println("Photo isn't in color");
         }
     }
 // Define a function playMusic() below.
