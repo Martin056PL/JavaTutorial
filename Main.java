@@ -4,16 +4,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-    makeChange(3.5,5);
+    rollDice();
+    rollDice();
 
     }
 
 
-    public static double makeChange (double itemCost, double dollarsProvided){
+    public static int rollDice (){
 
-      double change = dollarsProvided - itemCost;
-      System.out.println(change);
-      return change;
+        double randomNumber = Math.random();
+        randomNumber = randomNumber*6;
+        randomNumber = randomNumber+1;
+        int randomInt = (int) randomNumber;
+        System.out.println("Roll: "+ randomInt);
+        return randomInt;
+
 
       }
 
