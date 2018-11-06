@@ -4,18 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-    returnLikes(1,"nice",true);
+    makeChange(3.5,5);
 
     }
 
-    public static int returnLikes(int currentLikes, String Comment, boolean like) {
-        System.out.println("Feedback: " + Comment);
-        if (like) {
-            currentLikes = currentLikes + 1;
-        }
-        System.out.println("Number of likes: " + currentLikes);
-        return currentLikes;
-    }
+
+    public static double makeChange (double itemCost, double dollarsProvided){
+
+      double change = dollarsProvided - itemCost;
+      System.out.println(change);
+      return change;
+
+      }
+
 }
 
 
