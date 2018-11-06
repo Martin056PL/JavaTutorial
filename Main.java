@@ -2,18 +2,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-    playMusic();
+        greetings("Lublin");
 
     }
 
     boolean playButton = true; // true or false
 
-    public void playMusic(){
-        if(playButton){
-            System.out.println("Music is playing");
-        }else{
-            System.out.println("Music is paused");
-        }
+    public static void greetings(String city){
+        System.out.println("Hello " + city );
     }
 // Define a function playMusic() below.
 // This should print out: "Music is playing" when playButton is true
@@ -22,4 +18,4 @@ public class Main {
 
 
 }
-}
+
